@@ -7,10 +7,9 @@ from Environment import Snake_Env
 
 
 #creating the environment
-a = 37
-max_env_width, max_env_height = a, a
-env_width, env_height = a-2, a-2
-display_width, display_height = a*18, a*18
+max_env_width, max_env_height = 37, 37
+env_width, env_height = 37-2, 37-2
+display_width, display_height = 37*18, 37*18
 env = Snake_Env(max_env_width, max_env_height, env_width, env_height, display_width, display_height)
 
 agent = DeepQ_agent(env, hidden_units=(32, 16, 10))
